@@ -29,7 +29,8 @@ interface ResponseStructure {
 const isDev = process.env.NODE_ENV === 'development';
 
 export const errorConfig: RequestConfig = {
-  baseURL: isDev?"http://localhost:7529":"http://118.31.117.97:7529",
+  // baseURL: isDev?"http://localhost:7529":"http://118.31.117.97:7529",
+  baseURL: "http://118.31.117.97:7529",
   withCredentials: true,
   // 请求拦截器
   requestInterceptors: [
